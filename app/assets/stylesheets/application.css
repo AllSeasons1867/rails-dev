@@ -13,3 +13,156 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    margin: 0% 5% 0% 5%;
+    border: solid black 1px;
+}
+
+header {
+    overflow: auto;
+    background-color: #021434;
+    color: #fff;
+    padding: 1vh 0vh;
+}
+
+main {
+    clear: both;
+    padding: 0% 2.5% 2.5% 2.5%;
+}
+
+main > section {
+    height: 20vh;
+}
+
+header > span {
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; 
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 0;
+}
+
+ul > li {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+footer {
+    overflow: auto;
+    background-color: #021434;
+    color: #fff;
+    padding: 1.5vh;
+    text-align: center;
+}
+
+ul > li:not(#title) {
+    float: right; 
+}
+
+li a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+li a:hover {
+    color: white;
+}
+
+.hero {
+    width: 100%;
+    display: inline-flex;
+    margin-bottom: 10vh;
+}
+
+.hero > div {
+    width: 50%;
+}
+
+.hero > :nth-child(1) {
+    padding: 2.5%;
+}
+
+.hero > :nth-child(2) {
+    padding: 2.5%;
+}
+
+.hero > div > img {
+    max-width: 100%;
+    float: right;
+}
+
+.projects {
+    display: inline-flex;
+    padding: 0% 2.5% 0% 2.5%;
+}
+
+.projects > article {
+    padding: 1%;
+}
+
+.quote {
+    padding: 0% 10% 0% 10%;
+}
+
+.quote > :nth-child(1){
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.quote > :nth-child(2){
+    text-align: right;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.todo {
+    /* border: red solid 1px; */
+    padding: 2.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: fit-content;
+}
+
+.todo-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list li {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.todo > * {
+    margin: 2.5%
+}
+
+.todo > ul {
+
+}
+
+.todo > ul > li {
+
+}
+
+.delete-button {
+    margin: 10px 5px 5px 5px;
+}
+
+#title {
+    float: left; 
+    margin-right: auto; 
+}
